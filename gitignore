@@ -1,0 +1,6 @@
+tags
+*.swp
+*.pyo
+*.pyc
+*.netrwhist
+*.egg-info/*
