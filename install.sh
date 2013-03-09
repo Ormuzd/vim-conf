@@ -24,3 +24,4 @@ fi
 
 git config --global user.name "Alex Yang"
 git config --global user.email "alex890714@gmail.com"
+git config --global core.excludesfile $HOME/.gitignore
