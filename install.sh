@@ -17,6 +17,7 @@ ln -s ~/.vim/gitignore ~/.gitignore
 
 if [ $is_red_hat -eq 0 ]; then
 sudo apt-get install -y pyflakes exuberant-ctags
+pip install flake8
 else
 yum --enablerepo install -y pyflakes
 yum install -y ctags-etags
