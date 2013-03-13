@@ -92,7 +92,7 @@ let tagbar_width = 30
 " ====== NerdTree ======
 " 打开 NerdTree
 map <silent> <F3> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$', 'tags', '\.egg-info']
+let NERDTreeIgnore = ['\.pyc$', 'tags', '\.egg-info', '\.egg$']
 
 "进行版权声明的设置
 ""添加或更新头
