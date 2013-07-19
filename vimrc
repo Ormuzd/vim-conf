@@ -33,7 +33,7 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " ====== 自动检测文件类型并加载相应的设置 ======
-syntax on
+syntax enable 
 filetype plugin indent on
 autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType java setlocal et sta sw=4 sts=4
