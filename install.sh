@@ -12,6 +12,12 @@ echo "Red Hat"
 if_red_hat=1
 fi
 
+cat /proc/version | grep "Fedora"
+if [ $? -eq 0 ]; then
+echo "Fedora"
+if_red_hat=1
+fi
+
 ln -s ~/.vim/vimrc ~/.vimrc 
 ln -s ~/.vim/gitignore ~/.gitignore 
 
