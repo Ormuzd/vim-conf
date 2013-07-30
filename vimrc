@@ -26,6 +26,10 @@ if ! has("gui_running")
 endif 
 colorscheme anotherdark
 
+" 非兼容模式
+set nocompatible
+set backspace=indent,eol,start
+
 " 窗口切换快捷键修改
 map <c-j> <c-w>j
 map <c-k> <c-w>k
