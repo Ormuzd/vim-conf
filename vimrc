@@ -37,8 +37,9 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " ====== 自动检测文件类型并加载相应的设置 ======
-syntax enable 
-filetype plugin indent on
+syntax on 
+filetype plugin on
+filetype indent on
 autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType java setlocal et sta sw=4 sts=4
 autocmd FileType php setlocal et sta sw=4 sts=4
@@ -47,6 +48,7 @@ autocmd FileType cpp setlocal et sta sw=4 sts=4
 autocmd FileType html setlocal et sta sw=4 sts=4
 autocmd FileType xml setlocal et sta sw=4 sts=4
 autocmd FileType bash setlocal et sta sw=4 sts=4
+autocmd FileType go setlocal et sta sw=4 sts=4
 
 " ====== 代码折叠 ======
 autocmd FileType python setlocal foldmethod=indent
@@ -57,6 +59,7 @@ autocmd FileType cpp setlocal foldmethod=indent
 autocmd FileType html setlocal foldmethod=indent
 autocmd FileType xml setlocal foldmethod=indent
 autocmd FileType bash setlocal foldmethod=indent
+autocmd FileType go setlocal foldmethod=indent
 
 " 默认展开所有代码
 set foldlevel=99
@@ -115,3 +118,6 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 "set cc=80
+
+" ===== go-lang ======
+au BufRead,BufNewFile *.go set filetype=go
