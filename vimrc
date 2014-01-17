@@ -12,7 +12,7 @@ set showcmd
 " 显示行号：
 set number
 " 为方便复制，用<F2>开启/关闭行号显示:
-nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+nnoremap <c-n> :set nonumber!<CR>:set foldcolumn=0<CR>
 " 临时粘贴
 set pastetoggle=<F4>
 " 编码
@@ -93,17 +93,17 @@ inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 set tags=tags;/
 
 " ====== Tagbar======
-nmap <F5> :TagbarToggle<CR>
+nmap <c-t> :TagbarToggle<CR>
 let tagbar_width = 30
 
 " ====== NerdTree ======
 " 打开 NerdTree
-map <silent> <F3> :NERDTreeToggle<CR>
+map <silent> <c-f> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$', 'tags', '\.egg-info', '\.egg$']
 
 "进行版权声明的设置
 ""添加或更新头
-map <F6> :call AddTitle()<cr>'s
+map <c-c> :call AddTitle()<cr>'s
 function AddTitle()
     call append(0,"#!/usr/bin/python")
     call append(1,"# -*- coding: utf-8 -*-")
