@@ -93,7 +93,7 @@ inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 set tags=tags;/
 
 " ====== Tagbar======
-nmap <c-t> :TagbarToggle<CR>
+nmap <c-m> :TagbarToggle<CR>
 let tagbar_width = 30
 
 " ====== NerdTree ======
