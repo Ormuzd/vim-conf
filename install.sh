@@ -20,6 +20,7 @@ fi
 
 ln -s ~/.vim/vimrc ~/.vimrc 
 ln -s ~/.vim/gitignore ~/.gitignore 
+ln -s ~/.vim/screenrc ~/.screenrc
 
 if [ $is_red_hat -eq 0 ]; then
 sudo apt-get install -y pyflakes exuberant-ctags
