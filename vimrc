@@ -111,12 +111,12 @@ function AddTitle()
 endf
 
 " ====== 对齐线 ======
-let g:indent_guides_guide_size=1  " 宽度
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
+"let g:indent_guides_guide_size=1  " 宽度
+"if exists('+colorcolumn')
+"  set colorcolumn=80
+"else
+"  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+"endif
 "set cc=80
 
 " ===== go-lang ======

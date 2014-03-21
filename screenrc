@@ -7,3 +7,4 @@ hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}% w %=%{..G} %H(%l) %{..Y} %Y/%m/%d %
 vbell off
 bind w windowlist -b
 bind ^w windowlist -b
+utf8 on
