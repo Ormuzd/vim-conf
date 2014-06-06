@@ -11,6 +11,12 @@ set ruler
 set showcmd
 " 显示行号：
 set number
+"高亮行"
+set cursorline 
+"高亮列"
+set cursorcolumn
+hi cursorcolumn guibg=#333333
+
 " 为方便复制，用<F2>开启/关闭行号显示:
 nnoremap <c-n> :set nonumber!<CR>:set foldcolumn=0<CR>
 " 临时粘贴
@@ -90,7 +96,7 @@ inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDow
 inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 
 " ====== CTAGS ======
-set tags=tags;/
+set tags=/home/svn/judger/tags;/
 
 " ====== Tagbar======
 nmap <c-m> :TagbarToggle<CR>
